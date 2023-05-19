@@ -4,7 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+
 
 class Componente extends Model
 {
@@ -12,8 +13,10 @@ class Componente extends Model
     protected $table = 'componente';
     public $timestamps = false;
 
-    public function professor(): BelongsTo
+    public function horarios(): HasMany
     {
-        return $this->belongsTo(Professor::class);
+        return $this->hasMany(Horario::class);
     }
+
+    
 }

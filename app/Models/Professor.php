@@ -12,10 +12,7 @@ class Professor extends Model
     protected $table = 'professor';
     public $timestamps = false;
 
-    public function componentes(): HasMany
-    {
-        return $this->hasMany(Componente::class);
-    }
+   
 
     public function horarios(): HasMany
     {
