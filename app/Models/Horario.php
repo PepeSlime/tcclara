@@ -22,5 +22,8 @@ class Horario extends Model
         return $this->belongsTo(Componente::class, 'id_componente');
     }
 
-    
+    public function turma(): BelongsTo
+    {
+        return $this->belongsTo(Turma::class, 'id_turma');
+    }
 }
