@@ -5,17 +5,17 @@ use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
-    public function up(): void
-    {
-        DB::statement("
+  public function up(): void
+  {
+    DB::statement("
         CREATE TABLE IF NOT EXISTS `componente` (
             `id` int(11) NOT NULL AUTO_INCREMENT,
             `componente` varchar(50) NOT NULL,
             PRIMARY KEY (`id`)
           ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
         ");
-        
-        DB::statement("
+
+    DB::statement("
         CREATE TABLE IF NOT EXISTS `professor` (
             `id` int(11) NOT NULL AUTO_INCREMENT,
             `nome` varchar(50) NOT NULL,
@@ -25,7 +25,7 @@ return new class extends Migration
           ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
         ");
 
-        DB::statement("
+    DB::statement("
         CREATE TABLE IF NOT EXISTS `horario` (
             `id` int(11) NOT NULL AUTO_INCREMENT,
             `dia_da_semana` varchar(50) NOT NULL,
@@ -40,23 +40,21 @@ return new class extends Migration
             CONSTRAINT `horario_ibfk_2` FOREIGN KEY (`id_componente`) REFERENCES `componente` (`id`)
           ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
         ");
+  }
 
+
+  public function down(): void
+  {
+    DB::statement("
+        DROP TABLE IF EXISTS `professor`;
+        ");
         
-    }
-
-   
-    public function down(): void
-    {
-        DB::statement("
+    DB::statement("
         DROP TABLE IF EXISTS `componente`;
         ");
 
-        DB::statement("
+    DB::statement("
         DROP TABLE IF EXISTS `horario`;
         ");
-
-        DB::statement("
-        DROP TABLE IF EXISTS `professor`;
-        ");
-    }
+  }
 };
