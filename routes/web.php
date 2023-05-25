@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/inicio', function () {
     return view('inicio');
 });
 
@@ -49,3 +49,4 @@ Route::get('/turma/listagem', function () {
 Route::get('/horario', function () {
     return view('horario');
 });
+
