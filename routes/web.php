@@ -13,13 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('inicio');
-});
 
-Route::get('/componente/cadastro', function () {
-    return view('cad_comp');
-});
+    
+
+
+Route::get('/', [LoginController::class, 'logar']);
+
+
+
+Route::get('/componente/cadastro', [ComponentController::class, 'criar']);
 
 
 Route::get('/professor/cadastro', function () {
