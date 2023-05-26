@@ -1,0 +1,31 @@
+#header{
+    z-index: 1;
+}
+
+
+header h1 {
+color: blue;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+#menu{
+    border-radius: 0 0 15px 0;
+}
+#menu a {
+    color: black;
+    text-decoration: none;
+
+}
+/*Quando o mcursor passar por cima do link*/
+#menu a:hover {
+    color: rgb(18, 32, 223);
+
+}
+
+.hidden{
+    display: none;
+}
