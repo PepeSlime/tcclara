@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ComponenteControlle extends Controller
+class ComponenteController extends Controller
 {
     public function criar()
 	{
