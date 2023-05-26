@@ -8,7 +8,7 @@ use App\Http\Controllers\TurmaController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', [LoginController::class, 'logar']);
+Route::get('/login', [LoginController::class, 'logar']);
 
 
 Route::get('/componente/cadastro', [ComponenteController::class, 'criar']);
