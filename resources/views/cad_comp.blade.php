@@ -7,7 +7,7 @@
     <title>Cadastro componente</title>
     <link rel="stylesheet" href="/flex/flex-style.css">
     <link rel="stylesheet" href="/flex/flex.css">
-    <link rel="stylesheet" href="/css/comp.css">
+    <link rel="stylesheet" href="/css/prof.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
