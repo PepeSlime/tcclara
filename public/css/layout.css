@@ -1,0 +1,28 @@
+#header {
+    z-index: 1;
+}
+
+header h1 {
+    color: blue;
+}
+
+#menu {
+    border-radius: 0 0 15px 0;
+    position: absolute;
+    top: 130px;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+
+}
+
+#menu a:hover {
+    color: rgb(18, 32, 223);
+
+}
+
+.hidden {
+    display: none;
+}

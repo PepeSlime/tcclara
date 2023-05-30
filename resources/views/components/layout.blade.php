@@ -8,7 +8,8 @@
     <title>Timenize</title>
     <link rel="stylesheet" href="/flex/flex-style.css">
     <link rel="stylesheet" href="/flex/flex.css">
-    <link rel="stylesheet" href="g-icons.css" />
+    <link rel="stylesheet" href="/g-icons.css" />
+    <link rel="stylesheet" href="/css/layout.css">
 </head>
 
 <body>
@@ -26,47 +27,44 @@
         </span>
     </header>
 
+    <nav id="menu" class="flex-col box fit-width space-30 hidden">
+        <a href="" class="flex-row gap-10 content-vcenter">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+            <span>
+                Home
+            </span>
+        </a>
+
+        <a href="" class="flex-row gap-10 content-vcenter">
+            <span class="material-symbols-outlined">
+                settings
+            </span>
+
+            </span>
+            <span>
+                Configurações
+            </span>
+        </a>
+
+        <a href="" class="flex-row gap-10 content-vcenter">
+            <span onclick="volteLogin()" class="material-symbols-outlined">
+                logout
+            </span>
+            <span onclick="volteLogin()">
+                Logout
+            </span>
+        </a>
+    </nav>
+
     <div class=" conteudo grow ">
-
-        <nav id="menu" class="flex-col box fit-width space-30 hidden">
-            <a href="" class="flex-row gap-10 content-vcenter">
-                <span class="material-symbols-outlined">
-                    home
-                </span>
-                <span>
-                    Home
-                </span>
-            </a>
-
-            <a href="" class="flex-row gap-10 content-vcenter">
-                <span class="material-symbols-outlined">
-                    settings
-                </span>
-
-                </span>
-                <span>
-                    Configurações
-                </span>
-            </a>
-
-            <a href="" class="flex-row gap-10 content-vcenter">
-                <span onclick="volteLogin()" class="material-symbols-outlined">
-                    logout
-                </span>
-                <span onclick="volteLogin()">
-                    Logout
-                </span>
-            </a>
-
-            <div class="app-content">
-                {{ $slot }}
-            </div>
-
-            <footer class="flex-row box content-center  space-40 ">
-                <div>JJP 2023</div>
-            </footer>
-        </nav>
+        {{ $slot }}
     </div>
+
+    <footer class="flex-row box content-center  space-40 ">
+        <div>JJP 2023</div>
+    </footer>
 
 </body>
 
