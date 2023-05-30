@@ -8,16 +8,16 @@ function mostarMenu() {
 
 
 function volteLogin() {
-    window.location = "logintest.html";
+    window.location = "/login";
 
 }
 
 function vaiProf() {
-    window.location = "prof.html";
+    window.location = "/professor/cadastro";
 }
 
 function vaiComp() {
-    window.location = "comp.html";
+    window.location = "/componente/cadastro";
 }
 
 
