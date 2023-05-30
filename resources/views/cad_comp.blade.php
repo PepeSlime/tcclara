@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<x-layout>
+    
     <title>Cadastro componente</title>
-    <link rel="stylesheet" href="/flex/flex-style.css">
-    <link rel="stylesheet" href="/flex/flex.css">
-    <link rel="stylesheet" href="/css/prof.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-
+<link rel="stylesheet" href="/css/prof.css">
 <body>
 
 
@@ -81,10 +70,8 @@
 
     </div>
 
-    <footer class="flex-row content-center box space-40 ">
-        <div>JJP 2023</div>
-    </footer>
+    
 
 </body>
 
-</html>
+</x-layout>
