@@ -18,6 +18,10 @@
                 <div class="inputBox">
                     <input type="password" senha="senha" id="senha" class="inputSenha" required>
                     <label for="senha" class="labelInput">Senha</label>
+                    <br>
+                    <div class="centrar-botao">
+                        <input id="enviar" type="submit" value="Entrar">
+                    </div>
                 </div>
             </fieldset>
 

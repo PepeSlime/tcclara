@@ -57,3 +57,18 @@ legend{
     font-size: 12px;
     color: dodgerblue;
 }
+
+#enviar {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    color: white;
+}
+
+.centrar-botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
