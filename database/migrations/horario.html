@@ -16,9 +16,7 @@
         background-color: aliceblue;
     }
 
-    table tr:nth-child(even) {
-        
-}
+
 
 table{
     width: 1400px;
@@ -29,13 +27,24 @@ h1{
     text-align: center;
 }
 
+#tabe{
+  text-align: center;
+  }
 
-
+.container{
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      
+}
+  
   </style>
 </head>
 <body>
     <h1>3° Desenvolvimento de Sistemas</h1>
-  <table align="center">
+    <div  class="container">
+  <table>
+    <form action="">
     <tr>
       <th>Horário</th>
       <th>Segunda-feira</th>
@@ -44,53 +53,55 @@ h1{
       <th>Quinta-feira</th>
       <th>Sexta-feira</th>
     </tr>
+    
     <tr>
-      <td rowspan="2">7:10</td>
-      <td>Professor</td>
+      <td id="tabe" rowspan="2">7:10 às 08:00</td>
+      <td>Professor <select name="Professor" id="Professor">
+        <option value="lucian">Lucian</option>
+        <option value="fabio">Fábio</option>
+      </select></td>
       <td>Professor</td>
       <td>Professor</td>
       <td>Professor</td>
       <td>Professor</td>
     </tr>
     <tr>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-      </tr>
-      <tr>
-        <td rowspan="2">8:50</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-      </tr>
-      <tr>
-        <td>Componente</td>
+        <td>Componente <select name="Componente" id="Componente">
+          <option value="tcc">TCC</option>
+          <option value="redes">Redes</option>
+        </select>
+        <input type="submit" value="Confirm"></td>
         <td>Componente</td>
         <td>Componente</td>
         <td>Componente</td>
         <td>Componente</td>
       </tr>
       <tr>
-        <td rowspan="2">9:40</td>
-        <td>Professor</td>
+        <td id="tabe"rowspan="2">8:00 às 08:50</td>
+        <td>Professor <select name="Professor" id="Professor">
+          <option value="fabio">Fábio</option>
+          <option value="lucian">Lucian</option>
+        </select></td>
         <td>Professor</td>
         <td>Professor</td>
         <td>Professor</td>
         <td>Professor</td>
       </tr>
       <tr>
-        <td>Componente</td>
+        <td>Componente
+          <select name="Componente" id="Componente">
+            <option value="redes">Redes</option>
+            <option value="tcc">Tcc</option>
+          </select>
+          <input type="submit" value="Confirm"></td>
+        </td>
         <td>Componente</td>
         <td>Componente</td>
         <td>Componente</td>
         <td>Componente</td>
       </tr>
       <tr>
-        <td rowspan="2">10:00</td>
+        <td id="tabe" rowspan="2">8:50 às 09:40</td>
         <td>Professor</td>
         <td>Professor</td>
         <td>Professor</td>
@@ -105,7 +116,7 @@ h1{
         <td>Componente</td>
       </tr>
       <tr>
-        <td rowspan="2">10:50</td>
+        <td id="tabe"rowspan="2">10:00 às 10:50</td>
         <td>Professor</td>
         <td>Professor</td>
         <td>Professor</td>
@@ -120,7 +131,7 @@ h1{
         <td>Componente</td>
       </tr>
       <tr>
-        <td rowspan="2">11:40</td>
+        <td id="tabe"rowspan="2">10:50 às 11:40</td>
         <td>Professor</td>
         <td>Professor</td>
         <td>Professor</td>
@@ -135,7 +146,7 @@ h1{
         <td>Componente</td>
       </tr>
       <tr>
-        <td rowspan="2">12:30</td>
+        <td id="tabe"rowspan="2">11:40 às 12:30</td>
         <td>Professor</td>
         <td>Professor</td>
         <td>Professor</td>
@@ -150,7 +161,7 @@ h1{
         <td>Componente</td>
       </tr>
       <tr>
-        <td rowspan="2">13:20</td>
+        <td id="tabe"rowspan="2">12:30 às 13:20</td>
         <td>Professor</td>
         <td>Professor</td>
         <td>Professor</td>
@@ -165,7 +176,7 @@ h1{
         <td>Componente</td>
       </tr>
       <tr>
-        <td rowspan="2">14:10</td>
+        <td id="tabe"rowspan="2">13:20 às 14:10</td>
         <td>Professor</td>
         <td>Professor</td>
         <td>Professor</td>
@@ -179,7 +190,24 @@ h1{
         <td>Componente</td>
         <td>Componente</td>
       </tr>
-        
+      <tr>
+        <td id="tabe"rowspan="2">14:10 às 15:00</td>
+        <td>Professor</td>
+        <td>Professor</td>
+        <td>Professor</td>
+        <td>Professor</td>
+        <td>Professor</td>
+      </tr>
+      <tr>
+        <td>Componente</td>
+        <td>Componente</td>
+        <td>Componente</td>
+        <td>Componente</td>
+        <td>Componente</td>
+      </tr>
+    </form> 
   </table>
+
+</div>
 </body>
 </html>
