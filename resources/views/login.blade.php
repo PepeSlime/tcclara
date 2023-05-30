@@ -11,16 +11,20 @@
 
 <body>
     <div class="box">
-        <form action="">
+        <form action="/"  method="post">
             <fieldset>
                 <legend><b>Login</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="password" senha="senha" id="senha" class="inputSenha" required>
+                    <input type="password"  name="senha"  id="senha" class="inputSenha" required>
                     <label for="senha" class="labelInput">Senha</label>
+                    <br>
+                    <div class="centrar-botao">
+                        <input id="enviar" type="submit" value="Entrar">
+                    </div>
                 </div>
             </fieldset>
-
+            @csrf
         </form>
 
     </div>
