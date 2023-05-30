@@ -1,10 +1,7 @@
 <x-layout>
-
-    <title>Home</title>
     <link rel="stylesheet" href="/css/home.css">
     <script src="/js/home.js"></script>
 
-    </nav>
     <div class="flex-row content-center space-30">
         <div class="box-round">
             <img onclick="vaiProf()" src="/img/professor.png">
@@ -20,6 +17,5 @@
             <img src="/img/relogio.png">
             <h2>Horário</h2>
         </div>
-    </div>
     </div>
 </x-layout>

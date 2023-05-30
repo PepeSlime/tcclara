@@ -57,7 +57,7 @@
                     Logout
                 </span>
             </a>
-            
+
             <div class="app-content">
                 {{ $slot }}
             </div>
@@ -65,6 +65,8 @@
             <footer class="flex-row box content-center  space-40 ">
                 <div>JJP 2023</div>
             </footer>
+        </nav>
+    </div>
 
 </body>
 
