@@ -8,7 +8,8 @@ use App\Http\Controllers\TurmaController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/login', [LoginController::class, 'logar']);
+Route::get('/', [LoginController::class, 'login']);
+Route::post('/', [LoginController::class, 'logar']);
 
 
 Route::get('/componente/cadastro', [ComponenteController::class, 'criar']);
@@ -26,6 +27,7 @@ Route::get('/turma/edicao', [TurmaController::class, 'criar']);
 Route::get('/turma/listagem', [TurmaController::class, 'listar']);
 
 
+Route::get('/inicio', [LoginController::class, 'inicio']);
 
 
 Route::get('/horario', [HorarioController::class, 'listar']);

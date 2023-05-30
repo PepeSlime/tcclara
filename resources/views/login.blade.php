@@ -11,13 +11,15 @@
 
 <body>
     <div class="box">
-        <form action="">
+        <form action="/"  method="post">
             <fieldset>
                 <legend><b>Login</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="password" senha="senha" id="senha" class="inputSenha" required>
+                    <input type="password"  name="senha"  id="senha" class="inputSenha" required>
                     <label for="senha" class="labelInput">Senha</label>
+                    <button type="submit">Logar</button >
+                    @csrf
                 </div>
             </fieldset>
 
