@@ -15,7 +15,8 @@ class LoginController extends Controller
 	{
 		$senha = $request->input('senha');
 		if ($senha == 123456) {
-			print("senha correta");
+			return redirect('/inicio');
+
 		} else {
 			print("senha incorreta");
 		}
