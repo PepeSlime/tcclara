@@ -18,11 +18,13 @@
                 <div class="inputBox">
                     <input type="password"  name="senha"  id="senha" class="inputSenha" required>
                     <label for="senha" class="labelInput">Senha</label>
-                    <button type="submit">Logar</button >
-                    @csrf
+                    <br>
+                    <div class="centrar-botao">
+                        <input id="enviar" type="submit" value="Entrar">
+                    </div>
                 </div>
             </fieldset>
-
+            @csrf
         </form>
 
     </div>
