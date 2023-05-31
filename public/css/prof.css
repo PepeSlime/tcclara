@@ -45,7 +45,7 @@ form input {
 }
 
 form input:focus {
-    background-color: rgb(92, 223, 247);
+    background-color: rgb(236, 196, 108);
 }
 
 form input[type=submit] {
