@@ -14,7 +14,7 @@
         </div>
 
         <div class="box-round">
-            <img src="/img/relogio.png">
+            <img onclick="vaiHor()"src="/img/relogio.png">
             <h2>Horário</h2>
         </div>
     </div>

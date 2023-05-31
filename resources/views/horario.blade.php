@@ -1,8 +1,6 @@
 <x-layout>
 
-<!DOCTYPE html>
-<html>
-<head>
+
   <title>Tabela HTML</title>
   <style>
     table, th, td{
@@ -182,5 +180,5 @@ h1{
         
   </table>
 </body>
-</html>
+
 </x-layout>
