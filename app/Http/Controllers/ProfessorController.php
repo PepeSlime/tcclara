@@ -8,7 +8,7 @@ use App\Models\Professor;
 
 class ProfessorController extends Controller
 {
-    public function criar($id)
+    public function criar($id = null)
 	{
 		$professor = Professor::find($id);
 
