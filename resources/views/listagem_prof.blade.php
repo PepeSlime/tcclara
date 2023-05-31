@@ -1,6 +1,6 @@
 <x-layout>
 
-<body>
+
     <link rel="stylesheet" href="/css/listagemprofessor.css">
     <table>
         <thead>
@@ -15,14 +15,16 @@
 
                 <td>{{ $professor->nome }}</td>
                 <td class="actions">
-                    <a href="/professor/edicao/{{ $professor->id }}" class="btn-editar">Editar</a>
-                    <a href="/turma/excluir/{{ $professor->id }}" class="btn-excluir">Excluir</a>
+                    <a class="btm" href="/professor/edicao/{{ $professor->id }}" class="btn-editar">Editar</a>
+                    <a class="btm" href="/turma/excluir/{{ $professor->id }}" class="btn-excluir">Excluir</a>
               </td>
             </tr>
             @endforeach
         </tbody>
     </table>
-</body>
+<br>
 
-</html>
+   <div class="flex-row content-center">
+        <a href="/professor/cadastro" class="btm" class="centrar-botao" id="Cadastro">Cadastro</a>
+    </div>
 </x-layout>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/flex/flex.css">
     <link rel="stylesheet" href="/g-icons.css" />
     <link rel="stylesheet" href="/css/layout.css">
+    <script src="/js/menu.js"></script>
 </head>
 
 <body>
@@ -28,11 +29,11 @@
     </header>
 
     <nav id="menu" class="flex-col box fit-width space-30 hidden">
-        <a href="" class="flex-row gap-10 content-vcenter">
+        <a href="/inicio" class="flex-row gap-10 content-vcenter">
             <span class="material-symbols-outlined">
-                home
+                home 
             </span>
-            <span>
+            <span >
                 Home
             </span>
         </a>
@@ -48,8 +49,8 @@
             </span>
         </a>
 
-        <a href="" class="flex-row gap-10 content-vcenter">
-            <span onclick="volteLogin()" class="material-symbols-outlined">
+        <a href="/" class="flex-row gap-10 content-vcenter">
+            <span  class="material-symbols-outlined">
                 logout
             </span>
             <span onclick="volteLogin()">

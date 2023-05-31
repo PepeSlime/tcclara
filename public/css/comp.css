@@ -39,20 +39,20 @@ form input {
     outline: unset;
     
     min-width: 300px;
-    border: 1px solid burlywood;
+    border: 1px solid rgb(18, 32, 223);
     border-radius: 20px;
 
 }
 
 form input:focus {
-    background-color: burlywood;
+    background-color: rgb(18, 32, 223);
 }
 
 form input[type=submit] {
-    background-color: rgb(170, 107, 26);
+    background-color: rgb(18, 32, 223);
     color: white;
     cursor: pointer;
-    border: 1px solid rgb(170, 107, 26);;
+    border: 1px solid rgb(18, 32, 223);
 }
 
 form label{
