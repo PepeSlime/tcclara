@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ComponenteController extends Controller
 {
-    public function criar($id)
+    public function criar($id = null)
 	{
 		return view('cad_comp');
 	}
