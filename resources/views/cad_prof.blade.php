@@ -3,7 +3,7 @@
 
     <title> Cadastro professor</title>
     <link rel="stylesheet" href="/css/prof.css">
-    <link rel="stylesheet" href="/css/home.js">
+    
 
 
     <section>
