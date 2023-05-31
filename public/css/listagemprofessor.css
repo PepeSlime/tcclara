@@ -26,3 +26,17 @@ table {
   .actions button {
     padding: 5px 10px;
   }
+
+  .btm {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    color: white;
+}
+
+.centrar-botao{
+  justify-content: center;
+  align-items: center;
+}

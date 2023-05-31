@@ -1,6 +1,6 @@
 <x-layout>
 
-<body>
+
     <link rel="stylesheet" href="/css/listagemprofessor.css">
     <table>
         <thead>
@@ -13,21 +13,32 @@
             <tr>
                 <td>ProfessorX</td>
                 <td class="actions">
-                    <button class="btn-editar">Editar</button>
-                    <button class="btn-excluir">Excluir</button>
+                  
+                    <button  class="btm" class="btn-editar">Editar</button>
+                    &nbsp;
+                    <button  class="btm" class="btn-excluir">Excluir</button>
+                   
+                   
                 </td>
             </tr>
             <tr>
                 <td>professorY</td>
                 <td class="actions">
-                    <button class="btn-editar">Editar</button>
-                    <button class="btn-excluir">Excluir</button>
+                
+                    <button class="btm" class="btn-editar">Editar</button>
+                    &nbsp;
+                    <button  class="btm" class="btn-excluir">Excluir</button>
+                
                 </td>
             </tr>
-            <!-- adicione mais linhas conforme necessário -->
+            
+
+            
         </tbody>
     </table>
-</body>
+<br>
 
-</html>
+   <div class="flex-row content-center">
+        <a href="/professor/cadastro" class="btm" class="centrar-botao" id="Cadastro">Cadastro</a>
+    </div>
 </x-layout>
