@@ -13,18 +13,21 @@ Route::post('/', [LoginController::class, 'logar']);
 
 
 Route::get('/componente/cadastro', [ComponenteController::class, 'criar']);
-Route::get('/componente/edicao', [ComponenteController::class, 'criar']);
+Route::get('/componente/edicao/{id}', [ComponenteController::class, 'criar']);
 Route::get('/componente/listagem', [ComponenteController::class, 'listar']);
+Route::get('/componente/excluir/{id}', [ComponenteController::class, 'excluir']);
 
 
 Route::get('/professor/cadastro', [ProfessorController::class, 'criar']);
-Route::get('/professor/edicao', [ProfessorController::class, 'criar']);
+Route::get('/professor/edicao/{id}', [ProfessorController::class, 'criar']);
 Route::get('/professor/listagem', [ProfessorController::class, 'listar']);
+Route::get('/professor/excluir/{id}', [ProfessorController::class, 'excluir']);
 
 
 Route::get('/turma/cadastro', [TurmaController::class, 'criar']);
-Route::get('/turma/edicao', [TurmaController::class, 'criar']);
+Route::get('/turma/edicao/{id}', [TurmaController::class, 'criar']);
 Route::get('/turma/listagem', [TurmaController::class, 'listar']);
+Route::get('/turma/excluir/{id}', [TurmaController::class, 'excluir']);
 
 
 Route::get('/inicio', [LoginController::class, 'inicio']);

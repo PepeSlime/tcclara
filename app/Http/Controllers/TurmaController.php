@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class TurmaController extends Controller
 {
-    public function criar()
+    public function criar($id)
 	{
 		return view('cad_turma');
 	}
@@ -21,7 +21,7 @@ class TurmaController extends Controller
 		return view('cad_turma');
 	}
 
-	public function excluir()
+	public function excluir($id)
 	{
 		// Exclui um registro
 	}

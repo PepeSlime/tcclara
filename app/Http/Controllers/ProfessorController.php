@@ -3,17 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Professor;
+
 
 class ProfessorController extends Controller
 {
-    public function criar()
+    public function criar($id = null)
 	{
-		return view('cad_prof');
+		$professor = Professor::find($id);
+
+		return view('cad_prof', ['professor' => $professor]);
 	}
 
 	public function listar()
 	{
-        return view('listagem_prof');
+		$professores = Professor::all();
+
+		return view('listagem_prof', ['professores' => $professores]);
+
 	}
 
 	public function alterar()
@@ -21,7 +28,7 @@ class ProfessorController extends Controller
 		return view('cad_prof');
 	}
 
-	public function excluir()
+	public function excluir($id)
 	{
 		// Exclui um registro
 	}

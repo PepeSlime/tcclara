@@ -10,30 +10,16 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>ProfessorX</td>
-                <td class="actions">
-                  
-                    <button  class="btm" class="btn-editar">Editar</button>
-                    &nbsp;
-                    <button  class="btm" class="btn-excluir">Excluir</button>
-                   
-                   
-                </td>
-            </tr>
-            <tr>
-                <td>professorY</td>
-                <td class="actions">
-                
-                    <button class="btm" class="btn-editar">Editar</button>
-                    &nbsp;
-                    <button  class="btm" class="btn-excluir">Excluir</button>
-                
-                </td>
-            </tr>
-            
+        @foreach ($professores as $professor)
+            <tr> 
 
-            
+                <td>{{ $professor->nome }}</td>
+                <td class="actions">
+                    <a class="btm" href="/professor/edicao/{{ $professor->id }}" class="btn-editar">Editar</a>
+                    <a class="btm" href="/turma/excluir/{{ $professor->id }}" class="btn-excluir">Excluir</a>
+              </td>
+            </tr>
+            @endforeach
         </tbody>
     </table>
 <br>
