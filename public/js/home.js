@@ -13,11 +13,11 @@ function volteLogin() {
 }
 
 function vaiProf() {
-    window.location = "/professor/cadastro";
+    window.location = "/professor/listagem";
 }
 
 function vaiComp() {
-    window.location = "/componente/cadastro";
+    window.location = "/componente/listagem";
 }
 
 

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ComponenteController extends Controller
 {
-    public function criar()
+    public function criar($id)
 	{
 		return view('cad_comp');
 	}
@@ -21,8 +21,9 @@ class ComponenteController extends Controller
 		return view('cad_comp'); 
 	}
 
-	public function excluir()
+	public function excluir($id)
 	{
 		// Exclui um registro
 	}
 }
+ 
