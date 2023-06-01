@@ -18,10 +18,9 @@
         <span onclick="mostarMenu()" class="material-symbols-outlined">
             menu
         </span>
-
-        <h1>
-            Timenize
-        </h1>
+    <img id="logo" src="/img/timelogor.png" alt="">
+    
+        
 
         <span onclick="volteLogin()" class="material-symbols-outlined">
             account_circle
