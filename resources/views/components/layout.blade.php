@@ -31,32 +31,51 @@
     <nav id="menu" class="flex-col box fit-width space-30 hidden">
         <a href="/inicio" class="flex-row gap-10 content-vcenter">
             <span class="material-symbols-outlined">
-                home 
-            </span>
-            <span >
-                Home
-            </span>
-        </a>
-
-        <a href="" class="flex-row gap-10 content-vcenter">
-            <span class="material-symbols-outlined">
-                settings
-            </span>
-
+                home
             </span>
             <span>
-                Configurações
+                Início
+            </span>
+        </a>
+        <a href="/professor/listagem" class="flex-row gap-10 content-vcenter">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+
+
+            <span>
+                Professor
             </span>
         </a>
 
-        <a href="/" class="flex-row gap-10 content-vcenter">
-            <span  class="material-symbols-outlined">
-                logout
+        <a href="/componente/listagem" class="flex-row gap-10 content-vcenter">
+            <span class="material-symbols-outlined">
+                grid_view
             </span>
-            <span onclick="volteLogin()">
-                Logout
+            <span>
+                Componentes
             </span>
         </a>
+
+        <a href="/horario" class="flex-row gap-10 content-vcenter">
+            <span class="material-symbols-outlined">
+                schedule
+            </span>
+            <span>
+               Horário
+            </span>
+            </a>
+
+            <a href="/" class="flex-row gap-10 content-vcenter">
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+                <span onclick="volteLogin()">
+                    Sair
+                </span>
+            </a>
+
+
     </nav>
 
     <div class=" conteudo grow ">

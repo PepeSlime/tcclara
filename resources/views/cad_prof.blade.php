@@ -9,7 +9,7 @@
             <label>Cadastro Professor</label>
         </div>
         <div>
-            <input type="text" placeholder="Nome:" name="name" required value="{{ $professor?->nome }} ">
+            <input type="text" placeholder="Nome:" name="name" required value="{{ $professor?->nome }}">
         </div>
         <div>
             <input type="text" placeholder="e-mail:" name="email" required value= "{{ $professor?->email }}">
