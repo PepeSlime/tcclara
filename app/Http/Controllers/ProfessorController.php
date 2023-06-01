@@ -10,7 +10,7 @@ class ProfessorController extends Controller
 {
     public function criar($id = null)
 	{
-		$professor = Professor::find($id);
+		$professor = Professor::all($id);
 
 		return view('cad_prof', ['professor' => $professor]);
 	}

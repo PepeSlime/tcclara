@@ -3,17 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Componente;
 
 class ComponenteController extends Controller
 {
-    public function criar($id)
+    public function criar($id = null)
 	{
-		return view('cad_comp');
+		$componente = Componente::find($id);
+
+		return view('cad_comp', ['componente' => $componente] );
 	}
 
 	public function listar()
 	{
-		return view('listagem_comp');
+		$componente = Componente::all();
+
+		return view('listagem_comp', ['componente' => $componente]);
 	}
 
 	public function alterar()
