@@ -14,8 +14,15 @@
         </div>
 
         <div class="box-round">
+            <img onclick="vaiTur()"src="/img/Turmas.png">
+            <h2>Turmas</h2>
+        </div>
+
+        <div class="box-round">
             <img onclick="vaiHor()"src="/img/relogio.png">
             <h2>Horário</h2>
         </div>
+
+       
     </div>
 </x-layout>

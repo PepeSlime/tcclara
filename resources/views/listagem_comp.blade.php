@@ -10,24 +10,27 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>ComponenteX</td>
-                <td class="actions">
 
-                    <button class="btm" class="btn-editar">Editar</button>
-                    &nbsp;
-                    <button class="btm" class="btn-excluir">Excluir</button>
+            @foreach ($componentes as $componente)
+            <tr>
+                <td>{{ $componente->nome }}</td>
+                <td class="actions">
+                    <a class="btm" href="/componente/edicao/{{ $componente->id }}" class="btn-editar">Editar</a>
+                    <a class="btm" href="/turma/excluir/{{ $componente->id }}" class="btn-excluir">Excluir</a>
 
 
                 </td>
             </tr>
+            @endforeach
+
             <tr>
                 <td>ComponenteY</td>
                 <td class="actions">
+                    <a class="btm" href="/componente/edicao/{{ $componente->id }}" class="btn-editar">Editar</a>
+                    <a class="btm" href="/turma/excluir/{{ $componente->id }}" class="btn-excluir">Excluir</a>
 
-                    <button class="btm" class="btn-editar">Editar</button>
-                    &nbsp;
-                    <button class="btm" class="btn-excluir">Excluir</button>
+
+                    
 
                 </td>
             </tr>
