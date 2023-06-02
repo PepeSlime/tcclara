@@ -23,19 +23,6 @@
             </tr>
             @endforeach
 
-            <tr>
-                <td>ComponenteY</td>
-                <td class="actions">
-                    <a class="btm" href="/componente/edicao/{{ $componente->id }}" class="btn-editar">Editar</a>
-                    <a class="btm" href="/turma/excluir/{{ $componente->id }}" class="btn-excluir">Excluir</a>
-
-
-                    
-
-                </td>
-            </tr>
-
-
 
         </tbody>
     </table>

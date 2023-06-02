@@ -16,9 +16,9 @@ class ComponenteController extends Controller
 
 	public function listar()
 	{
-		$componente = Componente::all();
+		$componentes = Componente::all();
 
-		return view('listagem_comp', ['componente' => $componente]);
+		return view('listagem_comp', ['componentes' => $componentes]);
 	}
 
 	public function alterar()
