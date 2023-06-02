@@ -10,31 +10,22 @@
             </tr>
         </thead>
         <tbody>
+
+            @foreach ($turmas as $turma)
             <tr>
-                <td>TurmaX</td>
+                <td>{{ $turma->nome }}</td>
                 <td class="actions">
 
-                    <button class="btm" class="btn-editar">Editar</button>
-                    &nbsp;
-                    <button class="btm" class="btn-editar">Horário</button>
-                    &nbsp;
-                    <button class="btm" class="btn-excluir">Excluir</button>
+                    <a class="btm" href="/turma/criar/{{ $turma->nome }}" class="btn-editar">Editar</a>
+                    <a class="btm" href="/turma/horario/{{ $turma->id }}" class="btn-excluir">Excluir</a>
+                    <a class="btm" href="/turma/excluir/{{ $turma->id }}" class="btn-excluir">Excluir</a>
+
 
 
                 </td>
             </tr>
-            <tr>
-                <td>TurmaY</td>
-                <td class="actions">
-
-                    <button class="btm" class="btn-editar">Editar</button>
-                    &nbsp;
-                    <button class="btm" class="btn-editar">Horário</button>
-                    &nbsp;
-                    <button class="btm" class="btn-excluir">Excluir</button>
-
-                </td>
-            </tr>
+            @endforeach
+            
 
 
 

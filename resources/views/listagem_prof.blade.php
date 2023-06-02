@@ -17,7 +17,7 @@
                 <td class="actions">
                     <a class="btm" href="/professor/edicao/{{ $professor->id }}" class="btn-editar">Editar</a>
                     &nbsp;
-                    <a class="btm" href="/turma/excluir/{{ $professor->id }}" class="btn-excluir">Excluir</a>
+                    <a class="btm" href="/professor/excluir/{{ $professor->id }}" class="btn-excluir">Excluir</a>
               </td>
             </tr>
             @endforeach

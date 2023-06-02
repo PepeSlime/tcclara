@@ -33,4 +33,4 @@ Route::get('/turma/excluir/{id}', [TurmaController::class, 'excluir']);
 Route::get('/inicio', [LoginController::class, 'inicio']);
 
 
-Route::get('/horario', [HorarioController::class, 'listar']);
+Route::get('/horario/{id_turma}', [HorarioController::class, 'listar']);
