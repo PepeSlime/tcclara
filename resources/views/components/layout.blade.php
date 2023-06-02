@@ -18,10 +18,9 @@
         <span onclick="mostarMenu()" class="material-symbols-outlined">
             menu
         </span>
-
-        <h1>
-            Timenize
-        </h1>
+    <img id="logo" src="/img/timelogor.png" alt="">
+    
+        
 
         <span onclick="volteLogin()" class="material-symbols-outlined">
             account_circle
@@ -57,23 +56,33 @@
             </span>
         </a>
 
+        <a href="/turma/listagem" class="flex-row gap-10 content-vcenter">
+            <span class="material-symbols-outlined">
+                groups
+            </span>
+            <span>
+                Turmas
+            </span>
+        </a>
+
+
         <a href="/horario" class="flex-row gap-10 content-vcenter">
             <span class="material-symbols-outlined">
                 schedule
             </span>
             <span>
-               Horário
+                Horário
             </span>
-            </a>
+        </a>
 
-            <a href="/" class="flex-row gap-10 content-vcenter">
-                <span class="material-symbols-outlined">
-                    logout
-                </span>
-                <span onclick="volteLogin()">
-                    Sair
-                </span>
-            </a>
+        <a href="/" class="flex-row gap-10 content-vcenter">
+            <span class="material-symbols-outlined">
+                logout
+            </span>
+            <span onclick="volteLogin()">
+                Sair
+            </span>
+        </a>
 
 
     </nav>

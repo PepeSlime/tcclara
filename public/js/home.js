@@ -15,6 +15,10 @@ function vaiHor() {
     window.location = "/horario";
 }
 
+function vaiTur() {
+    window.location = "/turma/listagem";
+}
+
 
 
 
