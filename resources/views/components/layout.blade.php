@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="/flex/flex.css">
     <link rel="stylesheet" href="/g-icons.css" />
     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="icon" href="img/timelogor.png">
     <script src="/js/menu.js"></script>
 </head>
 
 <body>
-    <header id="header" class="flex-row content-vcenter space-40  content-space-between box">
+    <header id="header" class="flex-row content-vcenter space-20 content-space-between box">
         <span onclick="mostarMenu()" class="material-symbols-outlined">
             menu
         </span>
