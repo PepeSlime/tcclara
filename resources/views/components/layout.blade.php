@@ -19,9 +19,8 @@
         <span onclick="mostarMenu()" class="material-symbols-outlined">
             menu
         </span>
-    <img id="logo" src="/img/timelogor.png" alt="">
-    
-        
+
+       <img id="logo" src="/img/timelogor.png" alt="">
 
         <span onclick="volteLogin()" class="material-symbols-outlined">
             account_circle

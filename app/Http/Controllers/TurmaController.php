@@ -3,17 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Turma;
+
 
 class TurmaController extends Controller
 {
     public function criar($id = null)
 	{
-		return view('cad_turma');
+		$turma = Turma::find($id);
+
+		return view('cad_turma', ['turma' => $turma]);
+
 	}
 
 	public function listar()
 	{
-		return view('listagem_turma');
+		$turmas = Turma::all();
+
+		return view('listagem_turma', ['turmas' => $turmas]);
+
 	}
 
 	public function alterar()

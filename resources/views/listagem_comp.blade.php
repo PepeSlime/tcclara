@@ -16,7 +16,7 @@
                 <td>{{ $componente->nome }}</td>
                 <td class="actions">
                     <a class="btm" href="/componente/edicao/{{ $componente->id }}" class="btn-editar">Editar</a>
-                    <a class="btm" href="/turma/excluir/{{ $componente->id }}" class="btn-excluir">Excluir</a>
+                    <a class="btm" href="/componente/excluir/{{ $componente->id }}" class="btn-excluir">Excluir</a>
 
 
                 </td>
