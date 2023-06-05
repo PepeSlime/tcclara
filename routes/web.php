@@ -22,6 +22,7 @@ Route::get('/professor/cadastro', [ProfessorController::class, 'criar']);
 Route::get('/professor/edicao/{id}', [ProfessorController::class, 'criar']);
 Route::get('/professor/listagem', [ProfessorController::class, 'listar']);
 Route::get('/professor/excluir/{id}', [ProfessorController::class, 'excluir']);
+Route::post('/professor/salvar', [ProfessorController::class, 'salvar']);
 
 
 Route::get('/turma/cadastro', [TurmaController::class, 'criar']);

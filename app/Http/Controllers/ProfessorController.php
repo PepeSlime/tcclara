@@ -32,4 +32,8 @@ class ProfessorController extends Controller
 	{
 		// Exclui um registro
 	}
+	public function salvar()
+	{
+		
+	}
 }
