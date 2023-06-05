@@ -18,7 +18,3 @@ function vaiHor() {
 function vaiTur() {
     window.location = "/turma/listagem";
 }
-
-
-
-

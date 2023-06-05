@@ -43,7 +43,7 @@
 
 
             <span>
-                Professor
+                Professores
             </span>
         </a>
 
