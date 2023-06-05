@@ -13,7 +13,16 @@ class ProfessorController extends Controller
 		$professor = Professor::all($id);
 
 		return view('cad_prof', ['professor' => $professor]);
+	
 	}
+
+	public function cadastroProfessor(Request $request)
+{
+    $nome = $request->input('nome');
+    $email = $request->input('email');
+	$telefone = $request->input('telefone');
+    dd($nome, $email, $telefone);
+} 
 
 	public function listar()
 	{

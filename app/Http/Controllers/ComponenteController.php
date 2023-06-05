@@ -14,6 +14,11 @@ class ComponenteController extends Controller
 		return view('cad_comp', ['componente' => $componente] );
 	}
 
+	public function cadastrar_turma(Request $request)
+	{
+		$componente = $request->input('componente');
+	}
+
 	public function listar()
 	{
 		$componentes = Componente::all();

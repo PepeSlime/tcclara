@@ -8,17 +8,18 @@
 
 
         <section>
-            <form id="form">
+            <form action="/turma/cadastro" method="post" id="form">
                 <div>
                     <label>Cadastro Turma</label>
                 </div>
                 <div>
-                    <input type="text" placeholder="Turma:" name="name" required>
+                    <input type="text" placeholder="Turma:" name="turma" required>
                 </div>
 
                 <div>
-                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Cadastrar" >
                 </div>
+                @csrf
             </form>
         </section>
 

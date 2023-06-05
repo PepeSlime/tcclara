@@ -8,17 +8,18 @@
 
 
         <section>
-            <form id="form">
+            <form action="/componente/cadastro" method="post" id="form">
                 <div>
                     <label>Cadastro Componente</label>
                 </div>
                 <div>
-                    <input type="text" placeholder="Componente:" name="name" required>
+                    <input type="text" placeholder="Componente:" name="componente" required>
                 </div>
 
                 <div>
-                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Cadastrar" >
                 </div>
+                @csrf
             </form>
         </section>
 

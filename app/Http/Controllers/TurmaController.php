@@ -8,12 +8,16 @@ use App\Models\Turma;
 
 class TurmaController extends Controller
 {
-    public function criar($id = null)
+	public function criar($id = null)
 	{
 		$turma = Turma::find($id);
 
 		return view('cad_turma', ['turma' => $turma]);
+	}
 
+	public function cadastrar_turma(Request $request)
+	{
+		$turma = $request->input('turma');
 	}
 
 	public function listar()
@@ -21,7 +25,6 @@ class TurmaController extends Controller
 		$turmas = Turma::all();
 
 		return view('listagem_turma', ['turmas' => $turmas]);
-
 	}
 
 	public function alterar()
