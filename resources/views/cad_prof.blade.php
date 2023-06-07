@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="/css/prof.css">
 
 <section>
-    <form action="/professor/cadastro" method="post">
+    <form action="/professor/salvar" method="post">
         <input type="hidden" name="id" value="{{ $professor?->id}}">
         <div>
             <label>Cadastro Professor</label>

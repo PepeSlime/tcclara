@@ -8,12 +8,13 @@
 
 
         <section>
-            <form action="/turma/cadastro" method="post" id="form">
+            <form action="/turma/salvar" method="post" id="form">
+                <input type="hidden" name="id" value="{{ $turma?->id}}">
                 <div>
                     <label>Cadastro Turma</label>
                 </div>
                 <div>
-                    <input type="text" placeholder="Turma:" name="turma" required>
+                    <input type="text" placeholder="Turma:" name="turma" required value="{{ $turma?->nome }}">
                 </div>
 
                 <div>

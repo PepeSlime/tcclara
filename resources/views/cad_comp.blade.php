@@ -8,12 +8,13 @@
 
 
         <section>
-            <form action="/componente/cadastro" method="post" id="form">
+            <form action="/componente/salvar" method="post" id="form">
+                <input type="hidden" name="id" value="{{ $componente?->id}}">
                 <div>
                     <label>Cadastro Componente</label>
                 </div>
                 <div>
-                    <input type="text" placeholder="Componente:" name="componente" required>
+                    <input type="text" placeholder="Componente:" name="nome" required value="{{ $componente?->nome }}">
                 </div>
 
                 <div>
