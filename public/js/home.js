@@ -12,7 +12,7 @@ function vaiComp() {
 
 
 function vaiHor() {
-    window.location = "/horario";
+    window.location = "/horario/{id_turma}";
 }
 
 function vaiTur() {

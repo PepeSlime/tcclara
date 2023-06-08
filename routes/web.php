@@ -37,3 +37,4 @@ Route::get('/inicio', [LoginController::class, 'inicio']);
 
 
 Route::get('/horario/{id_turma}', [HorarioController::class, 'listar']);
+Route::post('/horario/{id_turma}', [HorarioController::class, 'associacao']);

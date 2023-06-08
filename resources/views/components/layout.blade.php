@@ -66,7 +66,7 @@
         </a>
 
 
-        <a href="/horario" class="flex-row gap-10 content-vcenter">
+        <a href="/horario/{id_turma}" class="flex-row gap-10 content-vcenter">
             <span class="material-symbols-outlined">
                 schedule
             </span>

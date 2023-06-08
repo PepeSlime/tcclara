@@ -17,7 +17,7 @@ class Horario extends Model
         return $this->belongsTo(Professor::class, 'id_professor');
     }
 
-    public function componenter(): BelongsTo
+    public function componente(): BelongsTo
     {
         return $this->belongsTo(Componente::class, 'id_componente');
     }
@@ -26,4 +26,6 @@ class Horario extends Model
     {
         return $this->belongsTo(Turma::class, 'id_turma');
     }
+
+
 }

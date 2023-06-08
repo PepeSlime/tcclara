@@ -1,185 +1,66 @@
 <x-layout>
+    <link rel="stylesheet" href="/css/hora.css">
+    <div class="flex-col space-30 content-center">
+        <h1>{{$turma->nome}}</h1>
+        <table>
+            <tr>
+                <th>Horário</th>
+                @foreach($dias_da_semana as $dia)
+                <th>{{ $dia }} </th>
+                @endforeach
+            </tr>
+            @foreach ($cronograma as $h)
+            <tr>
 
+                <td>{{ $h[0] }} ás{{ $h[1]}}</td>
 
-  <title>Tabela HTML</title>
-  <style>
-    table, th, td{
-        border: 1px solid black;
-        border-collapse: collapse;
-    } 
+                @foreach ($dias_da_semana as $dia)
+                <td>
 
-    th{
-        background-color: rgb(255, 255, 255);
-    }
+                    <form class="flex-col gap-5" method="POST">
 
-    table tr:nth-child(odd) {
-        background-color: aliceblue;
-    }
+                        <select required name="prof">
+                            <option value="" selected hidden disabled>Professor</option>
+                            @foreach ($professores as $prof)
+                            <?php
+                                $registro = $prof->horarios
+                                ->where("hora_inicio","=", "$h[0]:00")
+                                ->where("hora_fim","=", "$h[1]:00")
+                                ->where("dia_da_semana","=", $dia)
+                                ->first();
+                            ?>
+                            <option <?php if($registro) echo 'selected';  ?> value="{{ $prof->id }}" >
+                                {{ $prof->nome }}
+                            </option>
+                            @endforeach
+                        </select>
+                        <select required name="comp">
+                            <option value="" selected hidden disabled>Componente</option>
+                            @foreach ($componentes as $comp)
+                            <?php
+                            $registro = $comp->horarios
+                            ->where("hora_inicio","=", "$h[0]:00")
+                            ->where("hora_fim","=", "$h[1]:00")
+                            ->where("dia_da_semana","=", $dia)
+                            ->first();
+                            ?>
+                            <option value="{{$comp->id}}" <?php if($registro) echo 'selected';  ?>>
+                                {{$comp->nome}}
+                            </option>
+                            @endforeach
+                        </select>
 
- 
-
-table{
-    width: 1400px;
-    height: 700px;
-}
-
-h1{
-    text-align: center;
-}
-
-
-
-  </style>
-</head>
-<body>
-    <h1>3° Desenvolvimento de Sistemas</h1>
-  <table align="center">
-    <tr>
-      <th>Horário</th>
-      <th>Segunda-feira</th>
-      <th>Terça-feira</th>
-      <th>Quarta-feira</th>
-      <th>Quinta-feira</th>
-      <th>Sexta-feira</th>
-    </tr>
-    <tr>
-      <td rowspan="2">7:10</td>
-      <td>Professor</td>
-      <td>Professor</td>
-      <td>Professor</td>
-      <td>Professor</td>
-      <td>Professor</td>
-    </tr>
-    <tr>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-      </tr>
-      <tr>
-        <td rowspan="2">8:50</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-      </tr>
-      <tr>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-      </tr>
-      <tr>
-        <td rowspan="2">9:40</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-      </tr>
-      <tr>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-      </tr>
-      <tr>
-        <td rowspan="2">10:00</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-      </tr>
-      <tr>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-      </tr>
-      <tr>
-        <td rowspan="2">10:50</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-      </tr>
-      <tr>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-      </tr>
-      <tr>
-        <td rowspan="2">11:40</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-      </tr>
-      <tr>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-      </tr>
-      <tr>
-        <td rowspan="2">12:30</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-      </tr>
-      <tr>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-      </tr>
-      <tr>
-        <td rowspan="2">13:20</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-      </tr>
-      <tr>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-      </tr>
-      <tr>
-        <td rowspan="2">14:10</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-        <td>Professor</td>
-      </tr>
-      <tr>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-        <td>Componente</td>
-      </tr>
-        
-  </table>
-  <br>
-</body>
-
+                        <input type="hidden" name="dds" value="{{$dia}}">
+                        <input type="hidden" name="hi" value="{{$h[0]}}">
+                        <input type="hidden" name="hf" value="{{$h[1]}}">
+                        <input type="hidden" name="turma" value="{{$turma->id}}">
+                        <button type="submit">Salvar</button>
+                        @csrf
+                    </form>
+                </td>
+                @endforeach
+            </tr>
+            @endforeach
+        </table>
+    </div>
 </x-layout>

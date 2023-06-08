@@ -16,7 +16,7 @@ class Professor extends Model
 
     public function horarios(): HasMany
     {
-        return $this->hasMany(Horario::class);
+        return $this->hasMany(Horario::class, 'id_professor');
     }
 
 }
