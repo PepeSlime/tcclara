@@ -16,8 +16,8 @@
                 <td>{{ $turma->nome }}</td>
                 <td class="actions">
 
-                    <a class="btm" href="/turma/criar/{{ $turma->nome }}" class="btn-editar">Editar</a>
-                    <a class="btm" href="/turma/horario/{{ $turma->id }}" class="btn-excluir">Excluir</a>
+                    <a class="btm" href="/turma/edicao/{{ $turma->id }}" class="btn-editar">Editar</a>
+                    <a class="btm" href="/turma/horario/{{ $turma->id }}" class="btn-Wexcluir">Excluir</a>
                     <a class="btm" href="/turma/excluir/{{ $turma->id }}" class="btn-excluir">Excluir</a>
 
 

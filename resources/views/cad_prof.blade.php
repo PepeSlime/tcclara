@@ -3,13 +3,13 @@
 <link rel="stylesheet" href="/css/prof.css">
 
 <section>
-    <form>
+    <form action="/professor/salvar" method="post">
         <input type="hidden" name="id" value="{{ $professor?->id}}">
         <div>
             <label>Cadastro Professor</label>
         </div>
         <div>
-            <input type="text" placeholder="Nome:" name="name" required value="{{ $professor?->nome }}">
+            <input type="text" placeholder="Nome:" name="nome" required value="{{ $professor?->nome }}" required>
         </div>
         <div>
             <input type="text" placeholder="e-mail:" name="email" required value= "{{ $professor?->email }}">
@@ -20,6 +20,7 @@
         <div>
             <input type="submit" value="Cadastrar">
         </div>
+        @csrf
     </form>
 </section>
 
