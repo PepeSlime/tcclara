@@ -10,7 +10,7 @@
 
         <div class="box-round">
             <img onclick="vaiComp()" src="/img/livros.png">
-            <h2>Componentes</h2>
+            <h2>Componentes </h2>
         </div>
 
         <div class="box-round">
