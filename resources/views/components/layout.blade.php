@@ -91,7 +91,7 @@
         {{ $slot }}
     </div>
 
-    <footer class="flex-row box content-center  space-40 ">
+    <footer id="pe"class="flex-row box content-center  space-40 ">
         <div>JJP 2023</div>
     </footer>
 

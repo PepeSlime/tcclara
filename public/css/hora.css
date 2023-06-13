@@ -18,3 +18,20 @@ table tr:nth-child(odd) {
 h1 {
     text-align: center;
 }
+
+@media print {
+    button {
+        display: none;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #pe{
+        display: none;
+    }
+    body{
+        zoom: 0.6;
+    }
+}

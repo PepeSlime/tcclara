@@ -62,5 +62,6 @@
             </tr>
             @endforeach
         </table>
+        <button type="button" onclick="window.print();">Imprimir</button>
     </div>
 </x-layout>
