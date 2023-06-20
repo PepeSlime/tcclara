@@ -18,10 +18,7 @@
             <h2>Turmas</h2>
         </div>
 
-        <div class="box-round">
-            <img onclick="vaiHor()" src="/img/relogio.png">
-            <h2>Horário</h2>
-        </div>
+       
 
 
     </div>
